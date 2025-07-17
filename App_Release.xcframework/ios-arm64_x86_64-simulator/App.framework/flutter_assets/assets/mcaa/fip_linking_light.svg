@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="291" height="329.5" viewBox="0 0 291 329.5">
+  <g id="circle-tick" transform="translate(-50 -162)">
+    <g id="Group_8750" data-name="Group 8750">
+      <g id="Ellipse_502" data-name="Ellipse 502" transform="translate(105 217)" fill="none" stroke="#666" stroke-width="0.5" stroke-dasharray="3" opacity="0.7">
+        <circle cx="90.5" cy="90.5" r="90.5" stroke="none"/>
+        <circle cx="90.5" cy="90.5" r="90.25" fill="none"/>
+      </g>
+      <g id="Ellipse_503" data-name="Ellipse 503" transform="translate(125 237)" fill="none" stroke="#666" stroke-width="0.5" stroke-dasharray="3">
+        <circle cx="70.5" cy="70.5" r="70.5" stroke="none"/>
+        <circle cx="70.5" cy="70.5" r="70.25" fill="none"/>
+      </g>
+      <g id="Ellipse_505" data-name="Ellipse 505" transform="translate(81 193)" fill="none" stroke="#666" stroke-width="0.5" stroke-dasharray="3" opacity="0.5">
+        <circle cx="114.5" cy="114.5" r="114.5" stroke="none"/>
+        <circle cx="114.5" cy="114.5" r="114.25" fill="none"/>
+      </g>
+      <g id="Ellipse_506" data-name="Ellipse 506" transform="translate(50 162)" fill="none" stroke="#666" stroke-width="0.5" stroke-dasharray="3" opacity="0.3">
+        <circle cx="145.5" cy="145.5" r="145.5" stroke="none"/>
+        <circle cx="145.5" cy="145.5" r="145.25" fill="none"/>
+      </g>
+      <g id="bank-bg" transform="translate(145 257)" fill="#fff" stroke="#e2e2e2" stroke-width="1">
+        <rect width="102" height="102" rx="51" stroke="none"/>
+        <rect x="0.5" y="0.5" width="101" height="101" rx="50.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_9785" data-name="Group 9785">
+      <circle id="Ellipse_12" data-name="Ellipse 12" cx="21" cy="21" r="21" transform="translate(174 449)" fill="#4ea24e" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      <path id="ic_done_24px" d="M971.236,534.8l-4.678-4.677L965,531.686l6.236,6.236L984.6,524.559,983.041,523Z" transform="translate(-780.199 -60.6)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg id="groww" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_502" data-name="Ellipse 502" cx="11" cy="11" r="11" transform="translate(0.032 0.032)" fill="#576bf4"/>
+    </clipPath>
+  </defs>
+  <rect id="Image_14" data-name="Image 14" width="24" height="24" rx="3" fill="#1f1f21" opacity="0"/>
+  <g id="groww-2" data-name="groww" transform="translate(-2653.668 593.332)">
+    <circle id="Ellipse_501" data-name="Ellipse 501" cx="11" cy="11" r="11" transform="translate(2654.668 -592.332)" fill="#576bf4"/>
+    <g id="Mask_Group_41" data-name="Mask Group 41" transform="translate(2654.636 -592.364)" clip-path="url(#clip-path)">
+      <path id="Path_14208" data-name="Path 14208" d="M40.078,132.77a10.154,10.154,0,0,0,1.745-1.339c1.46-1.17,3.5-3.15,5.941-5.425a11.057,11.057,0,0,1-19.594,10.24c3.033-2.406,4.807-3.783,5.878-4.669a3.091,3.091,0,0,1,1.509-.946,2.048,2.048,0,0,1,1.49.609c.645.461,1.273.948,1.867,1.345A1.638,1.638,0,0,0,40.078,132.77Z" transform="translate(-26.838 -119.889)" fill="#6decbd"/>
+    </g>
+  </g>
+</svg>

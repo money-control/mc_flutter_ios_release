@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_9896" data-name="Group 9896" transform="translate(-290 -951)">
+    <rect id="Rectangle_140491" data-name="Rectangle 140491" width="50" height="50" rx="3" transform="translate(290 951)" fill="none"/>
+    <g id="Group_9895" data-name="Group 9895" transform="translate(333.551 995.551) rotate(180)">
+      <g id="Rectangle_140492" data-name="Rectangle 140492" transform="translate(8.551 9.551)" fill="none" stroke="#79798e" stroke-width="1">
+        <rect width="8" height="8" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7" height="7" rx="0.5" fill="none"/>
+      </g>
+      <g id="Rectangle_140493" data-name="Rectangle 140493" transform="translate(8.551 21.551)" fill="none" stroke="#79798e" stroke-width="1">
+        <rect width="8" height="8" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7" height="7" rx="0.5" fill="none"/>
+      </g>
+      <g id="Rectangle_140494" data-name="Rectangle 140494" transform="translate(20.551 9.551)" fill="none" stroke="#79798e" stroke-width="1">
+        <rect width="8" height="8" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7" height="7" rx="0.5" fill="none"/>
+      </g>
+      <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M5.9.332,4.679,2.8l-2.727.4a.6.6,0,0,0-.33,1.019L3.595,6.141,3.128,8.856a.6.6,0,0,0,.866.629L6.433,8.2,8.873,9.485a.6.6,0,0,0,.866-.629L9.272,6.141l1.973-1.922a.6.6,0,0,0-.33-1.019L8.188,2.8,6.969.332A.6.6,0,0,0,5.9.332Z" transform="translate(18.117 20.774)" fill="#59d059"/>
+    </g>
+  </g>
+</svg>

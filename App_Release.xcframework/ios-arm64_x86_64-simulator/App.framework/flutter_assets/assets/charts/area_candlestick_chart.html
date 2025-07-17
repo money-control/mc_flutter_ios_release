@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="scripts/lightweight/lightweight-charts.standalone.production.js"></script>
+</head>
+
+<body style="margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden;">
+
+    <div id="chart-container" style="width: 100%; height: 100%; overflow: hidden;"></div>
+
+    <script>
+
+        var series = null;
+        var chart = null;
+        var chartData = null;
+        var options = null;
+        var crossHairVisible = false;
+
+        function loadChart(chartDataItems, chartOptions, chartType) {
+            chartData = chartDataItems;
+            options = chartOptions;
+            chart = LightweightCharts.createChart(document.getElementById('chart-container'), {
+                handleScale: false,
+                handleScroll: false,
+                layout: {
+                    background: {
+                        type: "solid",
+                        color: options.layout_background_color,
+                    },
+                    textColor: options.layout_textColor,
+                },
+                grid: {
+                    vertLines: {
+                        visible: false,
+                        color: 'rgba(197, 203, 206, 0.5)',
+                    },
+                    horzLines: {
+                        visible: false,
+                        color: 'rgba(197, 203, 206, 0.5)',
+                    },
+                },
+                rightPriceScale: {
+                    borderColor: 'rgba(197, 203, 206, 0.8)',
+                    ticksVisible: true,
+                },
+                timeScale: {
+                    rightOffset: options.timeScale_rightOffset,
+                    borderColor: 'rgba(197, 203, 206, 0.8)',
+                    timeVisible: options.timeScale_timeVisible,
+                    secondsVisible: false,
+                    borderVisible: false,
+                    visible: true,
+                    fixLeftEdge: true,
+                    lockVisibleTimeRangeOnResize: true,
+                },
+                crosshair: {
+                    mode: LightweightCharts.CrosshairMode.Magnet,
+                },
+            });
+
+            displayChart(chartData, options, chartType);
+            subscribeChartEvents();
+        };
+
+        function displayChart(chartData, options, chartType) {
+            if (chartType === 'area') {
+                series = chart.addAreaSeries({
+                    topColor: options.addAreaSeries_topColor,
+                    bottomColor: options.addAreaSeries_bottomColor,
+                    lineColor: options.addAreaSeries_lineColor,
+                    lineWidth: 2,
+                });
+                series.setData(chartData.map(function (item) {
+                    return { 'time': item.time, 'value': item.close };
+                }));
+            } else if (chartType === 'candlestick') {
+                series = chart.addCandlestickSeries({
+                    upColor: options.upColor,
+                    downColor: options.downColor,
+                    wickUpColor: options.wickUpColor,
+                    wickDownColor: options.wickDownColor,
+                    borderUpColor: options.borderUpColor,
+                    borderDownColor: options.borderDownColor,
+                });
+                series.setData(chartData);
+            }
+            chart.timeScale().fitContent();
+        };
+
+        function handleClick() {
+            if (crossHairVisible) {
+                console.log("### crossHairVisible: " + crossHairVisible + " cleared!");
+                chart.clearCrosshairPosition();
+                crossHairVisible = false;
+            } else {
+                console.log("### crossHairVisible: " + crossHairVisible + " clicked");
+                Flutter.postMessage('Clicked on chart.');
+            }
+        };
+
+        function toggleChartType(chartType) {
+            chart.removeSeries(series);
+            displayChart(chartData, options, chartType);
+        };
+
+        function updateChart(newData, chartType) {
+            chart.removeSeries(series);
+            displayChart(newData, options, chartType);
+        };
+
+        function subscribeChartEvents() {
+            chart.subscribeCrosshairMove((param) => {
+                if (!param.point) {
+                    return;
+                }
+                crossHairVisible = param.point != null;
+            });
+
+            chart.subscribeClick((param) => {
+                handleClick();
+            });
+
+            document.getElementById('chart-container').addEventListener('click', function (event) {
+                handleClick();
+            });
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<svg id="icon-accounts" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <circle id="Ellipse_422" data-name="Ellipse 422" cx="16" cy="16" r="16" fill="#3d57bf"/>
+  <g id="Component_195_260" data-name="Component 195 – 260" transform="translate(10 10)">
+    <g id="Group_7545" data-name="Group 7545">
+      <g id="Rectangle_140001" data-name="Rectangle 140001" transform="translate(0 1)" fill="none" stroke="#fff" stroke-width="1">
+        <rect width="12" height="12" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="11" height="11" rx="1.5" fill="none"/>
+      </g>
+      <line id="Line_1217" data-name="Line 1217" y1="2.563" transform="translate(3.4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_1218" data-name="Line 1218" y1="2.563" transform="translate(8.834)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_1219" data-name="Line 1219" x2="11.346" transform="translate(0.405 5.268)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Group_8763" data-name="Group 8763">
+        <g id="Ellipse_428" data-name="Ellipse 428" transform="translate(8.301 9.48)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="0.608" cy="0.608" r="0.608" stroke="none"/>
+          <circle cx="0.608" cy="0.608" r="0.108" fill="none"/>
+        </g>
+        <g id="Ellipse_427" data-name="Ellipse 427" transform="translate(5.4 9.48)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="0.608" cy="0.608" r="0.608" stroke="none"/>
+          <circle cx="0.608" cy="0.608" r="0.108" fill="none"/>
+        </g>
+        <g id="Ellipse_426" data-name="Ellipse 426" transform="translate(2.5 9.48)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="0.608" cy="0.608" r="0.608" stroke="none"/>
+          <circle cx="0.608" cy="0.608" r="0.108" fill="none"/>
+        </g>
+        <g id="Ellipse_428-2" data-name="Ellipse 428" transform="translate(8.301 7.051)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="0.608" cy="0.608" r="0.608" stroke="none"/>
+          <circle cx="0.608" cy="0.608" r="0.108" fill="none"/>
+        </g>
+        <g id="Ellipse_427-2" data-name="Ellipse 427" transform="translate(5.4 7.051)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="0.608" cy="0.608" r="0.608" stroke="none"/>
+          <circle cx="0.608" cy="0.608" r="0.108" fill="none"/>
+        </g>
+        <g id="Ellipse_426-2" data-name="Ellipse 426" transform="translate(2.5 7.051)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="0.608" cy="0.608" r="0.608" stroke="none"/>
+          <circle cx="0.608" cy="0.608" r="0.108" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

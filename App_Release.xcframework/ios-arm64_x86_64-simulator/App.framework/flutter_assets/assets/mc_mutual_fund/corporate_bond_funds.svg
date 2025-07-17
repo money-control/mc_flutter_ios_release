@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_9887" data-name="Group 9887" transform="translate(-50 -830)">
+    <g id="Group_9883" data-name="Group 9883" transform="translate(0 265)">
+      <rect id="Rectangle_140483" data-name="Rectangle 140483" width="50" height="50" rx="3" transform="translate(50 565)" fill="none"/>
+    </g>
+    <g id="Group_9886" data-name="Group 9886" transform="translate(-0.186 6.614)">
+      <path id="Path_9574" data-name="Path 9574" d="M0,0H6.18" transform="translate(75.747 859.669)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-width="1"/>
+      <g id="Group_9884" data-name="Group 9884" transform="translate(90.138 846.243) rotate(90)">
+        <g id="Rectangle_140484" data-name="Rectangle 140484" transform="translate(-0.34 0.069)" fill="none" stroke="#79798e" stroke-width="1.2">
+          <rect width="18" height="23" rx="3" stroke="none"/>
+          <rect x="0.6" y="0.6" width="16.8" height="21.8" rx="2.4" fill="none"/>
+        </g>
+        <path id="Path_9575" data-name="Path 9575" d="M3.687,21.678H1.736L.723,21.016l-.5-1.154V17.706a3.516,3.516,0,0,1,3.305.585,3.773,3.773,0,0,1,.939,3.386Z" transform="translate(0 0.752)" fill="#79798e"/>
+        <path id="Path_9576" data-name="Path 9576" d="M3.683,21.672H1.734L.722,21.011l-.5-1.153V17.706a3.512,3.512,0,0,1,3.3.585,3.768,3.768,0,0,1,.938,3.382Z" transform="translate(21.991 0.445) rotate(90)" fill="#79798e"/>
+        <path id="Path_9577" data-name="Path 9577" d="M3.687,21.678H1.736L.723,21.016l-.5-1.154V17.706a3.516,3.516,0,0,1,3.305.585,3.773,3.773,0,0,1,.939,3.386Z" transform="translate(17.201 22.341) rotate(180)" fill="#79798e"/>
+        <path id="Path_9578" data-name="Path 9578" d="M3.683,21.672H1.734L.722,21.011l-.5-1.153V17.706a3.512,3.512,0,0,1,3.3.585,3.768,3.768,0,0,1,.938,3.382Z" transform="translate(-4.865 22.649) rotate(-90)" fill="#79798e"/>
+      </g>
+      <path id="Polygon_17" data-name="Polygon 17" d="M4.5,0l.828.632L6.34.393l.5.916,1.021.2L7.95,2.547l.854.6-.342.987L9,5.025l-.712.762.13,1.037L7.46,7.23l-.3,1L6.12,8.209,5.441,9,4.5,8.555,3.559,9,2.88,8.209,1.84,8.231l-.3-1L.581,6.825l.13-1.037L0,5.025l.539-.894L.2,3.144l.854-.6.087-1.042,1.021-.2.5-.916L3.672.632Z" transform="translate(74.069 848.903)" fill="#59d059"/>
+      <g id="ecommerce-rupee" transform="translate(76.863 851.041)">
+        <path id="Path_9579" data-name="Path 9579" d="M22.646,22.457l-2.48-2.315v-.165h1.158s1.819.165,1.819-1.488C23.142,17,21.323,17,21.323,17H20" transform="translate(-20 -17)" fill="none" stroke="#014a9f" stroke-width="0.8"/>
+        <path id="Path_9580" data-name="Path 9580" d="M20,17h3.969" transform="translate(-20 -17)" fill="none" stroke="#014a9f" stroke-width="0.8"/>
+        <path id="Path_9581" data-name="Path 9581" d="M20,23h3.969" transform="translate(-20 -21.5)" fill="none" stroke="#014a9f" stroke-width="0.8"/>
+      </g>
+      <g id="Group_9885" data-name="Group 9885" transform="translate(60.186 833.219)">
+        <path id="Path_9582" data-name="Path 9582" d="M58.958,860.337V835.384H71.415v5.656" transform="translate(-58.958 -830.765)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Path_9583" data-name="Path 9583" d="M62.9,832.637v-2.968h7.451v2.968" transform="translate(-60.4 -828.018)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Path_9584" data-name="Path 9584" d="M62.9,832.153v-2.484h3.858v2.484" transform="translate(-58.603 -830.502)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Line_1593" data-name="Line 1593" y2="21.598" transform="translate(3.256 7.586)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-width="1"/>
+        <line id="Line_1594" data-name="Line 1594" y2="3.738" transform="translate(6.226 7.586)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-width="1"/>
+        <line id="Line_1595" data-name="Line 1595" y2="2.983" transform="translate(9.197 7.586)" fill="none" stroke="#79798e" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

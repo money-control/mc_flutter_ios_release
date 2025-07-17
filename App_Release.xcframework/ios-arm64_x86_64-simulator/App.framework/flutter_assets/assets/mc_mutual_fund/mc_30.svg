@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_9921" data-name="Group 9921" transform="translate(-290 -830)">
+    <rect id="Rectangle_140512" data-name="Rectangle 140512" width="50" height="50" rx="3" transform="translate(290 830)" fill="none"/>
+    <g id="Group_9920" data-name="Group 9920" transform="translate(-0.854 -1.068)">
+      <g id="Rectangle_140513" data-name="Rectangle 140513" transform="translate(306.854 840.068)" fill="#23232b" stroke="#79798e" stroke-width="0.8" opacity="0.5">
+        <rect width="22" height="28" rx="6" stroke="none"/>
+        <rect x="0.4" y="0.4" width="21.2" height="27.2" rx="5.6" fill="none"/>
+      </g>
+      <g id="Rectangle_140514" data-name="Rectangle 140514" transform="translate(304.854 842.068)" fill="#23232b" stroke="#79798e" stroke-width="1" opacity="0.7">
+        <rect width="22" height="28" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="21" height="27" rx="4.5" fill="none"/>
+      </g>
+      <g id="Rectangle_140515" data-name="Rectangle 140515" transform="translate(302.854 844.068)" fill="#23232b" stroke="#79798e" stroke-width="1.2">
+        <rect width="22" height="28" rx="4" stroke="none"/>
+        <rect x="0.6" y="0.6" width="20.8" height="26.8" rx="3.4" fill="none"/>
+      </g>
+      <g id="Group_9919" data-name="Group 9919" transform="translate(308.154 849.468)">
+        <text id="MC" transform="translate(0 8)" fill="#59d059" font-size="8" font-family="SFCompactDisplay-Bold, SF Compact Display" font-weight="700" letter-spacing="-0.051em"><tspan x="0" y="0">MC</tspan></text>
+        <text id="_30" data-name="30" transform="translate(0 15.017)" fill="#59d059" font-size="9" font-family="SFCompactDisplay-Bold, SF Compact Display" font-weight="700" letter-spacing="0.054em"><tspan x="0" y="0">30</tspan></text>
+      </g>
+      <line id="Line_1611" data-name="Line 1611" x2="11.783" transform="translate(307.82 849.468)" fill="none" stroke="#79798e" stroke-width="1"/>
+      <line id="Line_1612" data-name="Line 1612" x2="11.783" transform="translate(307.82 866.785)" fill="none" stroke="#79798e" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="credit_card" data-name="credit card" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_1240" data-name="Rectangle 1240" width="24" height="24" fill="#fff" opacity="0"/>
+  <g id="Group_6243" data-name="Group 6243" transform="translate(-96 -1018)">
+    <g id="Rectangle_1241" data-name="Rectangle 1241" transform="translate(96 1022)" fill="none" stroke="#bcbcd8" stroke-width="1">
+      <rect width="24" height="16" rx="3" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="15" rx="2.5" fill="none"/>
+    </g>
+    <line id="Line_587" data-name="Line 587" x2="23" transform="translate(96.5 1026.5)" fill="none" stroke="#bcbcd8" stroke-width="1"/>
+    <line id="Line_591" data-name="Line 591" x2="23" transform="translate(96.5 1029.5)" fill="none" stroke="#bcbcd8" stroke-width="1"/>
+    <line id="Line_588" data-name="Line 588" x2="1.5" transform="translate(99.5 1033.5)" fill="none" stroke="#bcbcd8" stroke-width="1"/>
+    <line id="Line_615" data-name="Line 615" x2="1.5" transform="translate(102.5 1033.5)" fill="none" stroke="#bcbcd8" stroke-width="1"/>
+    <line id="Line_616" data-name="Line 616" x2="1.5" transform="translate(105.5 1033.5)" fill="none" stroke="#bcbcd8" stroke-width="1"/>
+    <line id="Line_617" data-name="Line 617" x2="1.5" transform="translate(108.5 1033.5)" fill="none" stroke="#bcbcd8" stroke-width="1"/>
+    <line id="Line_589" data-name="Line 589" x2="1.5" transform="translate(114 1033.5)" fill="none" stroke="#cb9400" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

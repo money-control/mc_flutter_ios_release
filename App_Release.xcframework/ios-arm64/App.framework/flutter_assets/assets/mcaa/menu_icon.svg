@@ -1,0 +1,17 @@
+<svg id="icon-ac-details" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <circle id="Ellipse_422" cx="16" cy="16" r="16" fill="#3d57bf"/>
+  <g id="Group_7532" transform="translate(0 1)">
+    <g id="Group_7538" transform="translate(0 7)">
+      <rect id="Rectangle_140000" width="1.5" height="1.5" rx="0.75" transform="translate(10 11)" fill="#fff"/>
+      <rect id="Rectangle_139999" width="9" height="1" rx="0.5" transform="translate(13 11.25)" fill="#fff"/>
+    </g>
+    <g id="Group_7537" transform="translate(0 3.5)">
+      <rect id="Rectangle_140000-2" width="1.5" height="1.5" rx="0.75" transform="translate(10 11)" fill="#fff"/>
+      <rect id="Rectangle_139999-2" width="9" height="1" rx="0.5" transform="translate(13 11.25)" fill="#fff"/>
+    </g>
+    <g id="Group_7536">
+      <rect id="Rectangle_140000-3" width="1.5" height="1.5" rx="0.75" transform="translate(10 11)" fill="#fff"/>
+      <rect id="Rectangle_139999-3" width="9" height="1" rx="0.5" transform="translate(13 11.25)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

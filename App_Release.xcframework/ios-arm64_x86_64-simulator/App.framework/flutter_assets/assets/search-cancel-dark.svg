@@ -1,0 +1,8 @@
+<svg id="Component_1_6" data-name="Component 1 – 6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <circle id="Ellipse_13" cx="10" cy="10" r="10" fill="#3c3c45"/>
+  <g id="Group_2812" transform="translate(-31.5 -165.5)">
+    <path id="Path_1538" d="M3,3" transform="translate(35.5 175.5)" fill="none" stroke="#1a1a22" stroke-width="1.5"/>
+    <line id="Line_558" x1="6" y2="6" transform="translate(38.5 172.5)" fill="none" stroke="#1a1a22" stroke-width="1.5"/>
+    <line id="Line_563" x2="6" y2="6" transform="translate(38.5 172.5)" fill="none" stroke="#1a1a22" stroke-width="1.5"/>
+  </g>
+</svg>

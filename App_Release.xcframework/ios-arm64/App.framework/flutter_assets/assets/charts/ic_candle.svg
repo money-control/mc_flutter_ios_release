@@ -1,0 +1,20 @@
+<svg id="vector" xmlns="http://www.w3.org/2000/svg" width="10.5" height="15" viewBox="0 0 10.5 15">
+    <path fill="none" d="M8.25,6h2v6h-2z" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_0" />
+    <path fill="none" d="M9.25,3L9.25,6" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_1" />
+    <path fill="none" d="M9.25,12L9.25,14" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_2" />
+    <path fill="none" d="M4.25,3h2v5h-2z" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_3" />
+    <path fill="none" d="M5.25,0L5.25,3" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_4" />
+    <path fill="none" d="M5.25,8L5.25,10" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_5" />
+    <path fill="none" d="M0.25,7h2v5h-2z" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_6" />
+    <path fill="none" d="M1.25,4L1.25,7" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_7" />
+    <path fill="none" d="M1.25,12L1.25,15" stroke-linejoin="round" stroke-width="0.5" stroke="#fff"
+        id="path_8" />
+</svg>

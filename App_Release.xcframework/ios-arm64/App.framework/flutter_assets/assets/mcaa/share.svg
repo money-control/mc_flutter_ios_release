@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.655" height="13.648" viewBox="0 0 13.655 13.648">
+  <g id="share" transform="translate(0.5 0.5)">
+    <path id="Path_1519" d="M4.116,6.827m9.039-4.52A1.808,1.808,0,1,1,11.347.5a1.808,1.808,0,0,1,1.808,1.808Zm0,9.033a1.808,1.808,0,1,1-1.808-1.808A1.808,1.808,0,0,1,13.155,11.339ZM4.116,6.823A1.808,1.808,0,1,1,2.308,5.015,1.808,1.808,0,0,1,4.116,6.823Z" transform="translate(-0.5 -0.499)" fill="none" stroke="#ccc" stroke-linecap="square" stroke-width="1"/>
+    <line id="Line_576" y1="2.712" x2="6.327" transform="translate(3.164 2.26)" fill="none" stroke="#ccc" stroke-width="1"/>
+    <line id="Line_577" x2="6.327" y2="2.712" transform="translate(3.164 7.683)" fill="none" stroke="#ccc" stroke-width="1"/>
+  </g>
+</svg>

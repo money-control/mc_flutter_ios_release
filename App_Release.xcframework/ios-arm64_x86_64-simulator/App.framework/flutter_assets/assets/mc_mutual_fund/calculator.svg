@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Group_9477" data-name="Group 9477" transform="translate(-38 -1235)" opacity="0.999">
+    <g id="Group_8844" data-name="Group 8844" transform="translate(-4)">
+      <circle id="Ellipse_432" data-name="Ellipse 432" cx="17" cy="17" r="17" transform="translate(42 1235)" fill="#fff" opacity="0.2"/>
+      <g id="Group_8825" data-name="Group 8825" transform="translate(53 1244)">
+        <g id="Rectangle_140012" data-name="Rectangle 140012" fill="none" stroke="#fff" stroke-width="1">
+          <rect width="12.979" height="16.765" rx="2" stroke="none"/>
+          <rect x="0.5" y="0.5" width="11.979" height="15.765" rx="1.5" fill="none"/>
+        </g>
+        <g id="Rectangle_140013" data-name="Rectangle 140013" transform="translate(2.884 3.894)" fill="none" stroke="#fff" stroke-width="0.9">
+          <rect width="7.21" height="1.082" stroke="none"/>
+          <rect x="0.45" y="0.45" width="6.31" height="0.182" fill="none"/>
+        </g>
+        <line id="Line_1237" data-name="Line 1237" x2="1.622" transform="translate(2.92 10.059)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_1243" data-name="Line 1243" x2="1.622" transform="translate(2.92 7.524)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_1238" data-name="Line 1238" x2="1.622" transform="translate(5.678 10.059)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_1244" data-name="Line 1244" x2="1.622" transform="translate(5.678 7.524)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_1239" data-name="Line 1239" x2="1.622" transform="translate(8.436 10.059)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_1245" data-name="Line 1245" x2="1.622" transform="translate(8.436 7.524)" fill="none" stroke="#fff" stroke-width="1"/>
+        <g id="Group_8829" data-name="Group 8829" transform="translate(2.92 12.593)">
+          <line id="Line_1242" data-name="Line 1242" x2="1.622" fill="none" stroke="#fff" stroke-width="1"/>
+          <line id="Line_1241" data-name="Line 1241" x2="1.622" transform="translate(2.758)" fill="none" stroke="#fff" stroke-width="1"/>
+          <line id="Line_1240" data-name="Line 1240" x2="1.622" transform="translate(5.516)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

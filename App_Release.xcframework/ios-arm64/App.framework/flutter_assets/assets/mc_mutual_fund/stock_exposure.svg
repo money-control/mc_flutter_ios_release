@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Group_9870" data-name="Group 9870" transform="translate(-42 -1235)">
+    <circle id="Ellipse_493" data-name="Ellipse 493" cx="17" cy="17" r="17" transform="translate(42 1235)" fill="#fff" opacity="0.2"/>
+    <g id="Group_9869" data-name="Group 9869" transform="translate(0.349 -0.022)">
+      <g id="Icon_feather-zoom-in" data-name="Icon feather-zoom-in" transform="translate(50.798 1244)">
+        <path id="Path_9566" data-name="Path 9566" d="M14.167,9.333A4.833,4.833,0,1,1,9.333,4.5a4.833,4.833,0,0,1,4.833,4.833Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_9567" data-name="Path 9567" d="M27.6,27.6l-2.628-2.628" transform="translate(-12.228 -12.228)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_9568" data-name="Path 9568" d="M16.5,12v3.625" transform="translate(-7.167 -4.479)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_9569" data-name="Path 9569" d="M12,16.5h3.625" transform="translate(-4.479 -7.167)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <path id="Path_9570" data-name="Path 9570" d="M48.353,1254.511,52,1250.084" transform="translate(0.298 -0.777)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_9571" data-name="Path 9571" d="M50.085,1252.272l2.577-2.751" transform="translate(13.353 -2.416)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_9572" data-name="Path 9572" d="M49.1,1250.967l1.537,1.1" transform="translate(5.248 -1.66)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Ellipse_494" data-name="Ellipse 494" transform="translate(51.118 1246.5)" fill="none" stroke="#fff" stroke-width="1">
+        <circle cx="2" cy="2" r="2" stroke="none"/>
+        <circle cx="2" cy="2" r="1.5" fill="none"/>
+      </g>
+      <g id="Ellipse_495" data-name="Ellipse 495" transform="translate(65.173 1244.022)" fill="none" stroke="#fff" stroke-width="1">
+        <circle cx="2" cy="2" r="2" stroke="none"/>
+        <circle cx="2" cy="2" r="1.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

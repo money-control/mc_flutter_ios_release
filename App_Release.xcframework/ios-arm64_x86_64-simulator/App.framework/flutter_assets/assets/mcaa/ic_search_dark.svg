@@ -1,0 +1,12 @@
+<svg id="search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_9430" data-name="Group 9430" transform="translate(1 1)">
+    <g id="Group_102" data-name="Group 102" transform="translate(0)">
+      <line id="Line_107" data-name="Line 107" x2="4.278" y2="4.278" transform="translate(9.722 9.722)" fill="none" stroke="#ccc" stroke-width="1"/>
+      <g id="Ellipse_31" data-name="Ellipse 31" fill="none" stroke="#ccc" stroke-width="1">
+        <circle cx="5.833" cy="5.833" r="5.833" stroke="none"/>
+        <circle cx="5.833" cy="5.833" r="5.333" fill="none"/>
+      </g>
+    </g>
+  </g>
+  <rect id="Rectangle_140251" data-name="Rectangle 140251" width="16" height="16" fill="none"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_6396" data-name="Group 6396" transform="translate(829 -1092) rotate(90)">
+    <g id="Ellipse_451" data-name="Ellipse 451" transform="translate(1092 799)" fill="none" stroke="#ccc" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M10.838,11.356a.37.37,0,0,1,0,.522L9.121,13.6h7.556a.368.368,0,0,1,0,.737H9.121l1.723,1.726a.373.373,0,0,1,0,.522.367.367,0,0,1-.519,0L7.987,14.233h0a.414.414,0,0,1-.077-.116.352.352,0,0,1-.028-.142.369.369,0,0,1,.1-.258l2.336-2.353A.361.361,0,0,1,10.838,11.356Z" transform="translate(1094.538 802.248)" fill="#fff"/>
+    <path id="Icon_ionic-ios-arrow-round-back-2" data-name="Icon ionic-ios-arrow-round-back" d="M14.086,11.356a.37.37,0,0,0,0,.522L15.8,13.6H8.248a.368.368,0,0,0,0,.737H15.8L14.08,16.067a.373.373,0,0,0,0,.522.367.367,0,0,0,.519,0l2.336-2.353h0a.414.414,0,0,0,.077-.116.352.352,0,0,0,.028-.142.369.369,0,0,0-.1-.258L14.6,11.364A.361.361,0,0,0,14.086,11.356Z" transform="translate(1094.538 796.748)" fill="#fff"/>
+  </g>
+</svg>

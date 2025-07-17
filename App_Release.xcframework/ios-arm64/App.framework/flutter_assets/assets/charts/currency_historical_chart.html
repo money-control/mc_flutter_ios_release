@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--    <script src="https://code.highcharts.com/highcharts.js"></script>-->
+    <!--    <script src="https://code.highcharts.com/modules/boost.js"></script>-->
+    <!--    <script src="https://code.highcharts.com/modules/series-label.js"></script>-->
+    <!--    <script src="https://code.highcharts.com/modules/accessibility.js"></script>-->
+    <script src="scripts/highcharts/highcharts.js"></script>
+    <script src="scripts/highcharts/boost.js"></script>
+    <script src="scripts/highcharts/series-label.js"></script>
+    <script src="scripts/highcharts/accessibility.js"></script>
+    <style>
+        .highcharts-container {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <script>
+        var chart;
+        function loadLineChart(data, options) {
+            chart = Highcharts.chart('container', {
+                chart: {
+                    type: 'line',
+                    panning: true,
+                    pinchType: 'xy',
+                    zoomType: 'xy',
+                    resetZoomButton: false,
+                    scrollablePlotArea: true,
+                    backgroundColor: options.chartBackgroundColor,
+                },
+                time: {
+                    timezone: "India Standard Time",
+                    useUTC: false,
+                },
+                boost: {
+                    enabled: true
+                },
+                title: undefined,
+                subtitle: undefined,
+                scrollbar: {
+                    enabled: true
+                },
+                xAxis: {
+                    type: 'datetime',
+                    labels: {
+                        formatter: function () {
+                            if (this.value === '') {
+                                return ' ';
+                            }
+                            let format = '';
+                            switch (options.chartDuration) {
+                                case "1W":
+                                    format = "%e. %b";
+                                    break;
+                                case "1M":
+                                    format = "%e. %b";
+                                    break;
+                                case "3M":
+                                    format = "%e. %b";
+                                    break;
+                                case "6M":
+                                    format = "%e. %b";
+                                    break;
+                                case "1Y":
+                                    format = "%b '%y";
+                                    break;
+                                case "2Y":
+                                    format = "%b '%y";
+                                    break;
+                                case "5Y":
+                                    format = "%b '%y";
+                                    break;
+                            }
+                            return Highcharts.dateFormat(format, new Date(this.value));
+                        },
+                        style: {
+                            fontSize: '12px',
+                            color: options.xAxisLabelsStyleColor,  // Set the X-axis label color to green
+                        }
+                    },
+                    gridLineWidth: 0.1,
+                    gridLineColor: "lightgrey",
+                    tickWidth: 1,
+                    tickLength: 8,
+                    lineColor: options.xAxisLabelsStyleColor,
+                    tickColor: options.xAxisLabelsStyleColor,
+                },
+                yAxis: {
+                    title: undefined,
+                    labels: {
+                        format: '{value:.4f}',
+                        style: {
+                            fontSize: '12px',
+                            color: options.yAxisLabelsStyleColor,  // Set the X-axis label color to green
+                        }
+                    },
+                    opposite: true,
+                    gridLineWidth: 0.1,
+                    gridLineColor: "lightgrey",
+                },
+                tooltip: {
+                    formatter: function () {
+                        let sentiment = 'No Sentiment';
+                        if (data[this.point.index].currSentiment) {
+                            sentiment = data[this.point.index].currSentiment
+                        }
+                        return Highcharts.dateFormat('%A, %b %e, %Y', new Date(this.x)) + '<br>' +
+                            'Price: ' + Highcharts.numberFormat(this.y, 4) + '<br>' +
+                            'Sentiment: ' + sentiment;
+                    },
+                    backgroundColor: options.tooltipBackgroundColor,
+                    borderColor: options.tooltipBorderColor,
+                    style: {
+                        fontSize: '12px',
+                        color: options.tooltipStyleColor,  // Set the X-axis label color to green
+                    }
+                },
+                legend: {
+                    enabled: false,
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: '',
+                    color: "#5F5F5F",
+                    data: data.map(item => ({
+                        x: (new Date(item.endDate)).getTime(),
+                        y: parseFloat(item.closePrice),
+                        marker: {
+                            symbol: sentimentIconUrl(options.showSentimentsSymbol ? item.currSentiment : ''),
+                            enabled: options.showSentimentsSymbol,
+                        }
+                    }))
+                }]
+            });
+        }
+
+        function sentimentIconUrl(sentiment) {
+            let symbolUrl = '';
+            switch (sentiment) {
+                case 'Bullish':
+                    symbolUrl = 'url(bullisharr.svg)';
+                    break;
+                case 'Very Bullish':
+                    symbolUrl = 'url(verybullisharr.svg)';
+                    break;
+                case 'Bearish':
+                    symbolUrl = 'url(bearisharr.svg)';
+                    break;
+                case 'Very Bearish':
+                    symbolUrl = 'url(verybearisharr.svg)';
+                    break;
+                case 'Neutral':
+                    symbolUrl = 'url(neutralarr.svg)';
+                    break;
+                default:
+                    symbolUrl = 'circle';
+                    break;
+            }
+            return symbolUrl;
+        }
+
+        function updateLineChart(newData) {
+            chart.update({
+                xAxis: {
+                    type: 'datetime',
+                    categories: newData.map(item => item.endDate),
+                    labels: {
+                        formatter: function () {
+                            // Format the date to display only month and year
+                            return Highcharts.dateFormat('%b %y', new Date(this.value));
+                        },
+                    },
+                },
+                yAxis: {
+                    labels: {
+                        format: '{value:.4f}',
+                    },
+                },
+                tooltip: {
+                    formatter: function () {
+                        let sentiment = 'No Sentiment';
+                        if (newData[this.point.index].currSentiment) {
+                            sentiment = newData[this.point.index].currSentiment
+                        }
+                        return Highcharts.dateFormat('%A, %b %e, %Y', new Date(this.x)) + '<br>' +
+                            'Price: ' + Highcharts.numberFormat(this.y, 4) + '<br>' +
+                            'Sentiment: ' + sentiment;
+                    },
+                },
+                series: [{
+                    data: newData.map(item => parseFloat(item.closePrice))  // Update series data
+                }],
+            });
+            chart.series[0].points.forEach(function (point, index) {
+                point.update({
+                    marker: {
+                        symbol: sentimentIconUrl(newData[index].currSentiment),
+                    }
+                });
+            });
+        }
+
+    </script>
+</head>
+
+<body style="padding: 0; margin: 0;">
+    <div id="container" style="position: absolute; width: 100%; height: 100%;"></div>
+</body>
+
+</html>

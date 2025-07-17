@@ -1,0 +1,34 @@
+<svg id="deposit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Union_125" d="M22622.385,23839.383v-5.5h-7v-9.5h14v15Z" transform="translate(-22551 -22208)" fill="none" stroke="#d16b77" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Rectangle_139657" fill="#fff" stroke="#eff3f5" stroke-width="1" opacity="0">
+    <rect width="24" height="24" rx="3" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" rx="2.5" fill="none"/>
+  </g>
+  <g id="Group_7154" transform="translate(-56.383 -1612.383)">
+    <path id="Path_3749" d="M121.383,1620.705v4.238h2.92" transform="translate(-48.996)" fill="none" stroke="#d16b77" stroke-width="1"/>
+    <g id="Group_7150" transform="translate(60.383 1621.35)">
+      <g id="Group_7151">
+        <line id="Line_1072" x1="5" transform="translate(5.5 8.398)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_1074" x1="5" transform="translate(5.5 6.299)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_1073" x1="5" transform="translate(5.5 10.498)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_7152">
+        <line id="Line_1077" x1="5" transform="translate(-2 8.398)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_1075" x1="5" transform="translate(-2 6.299)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_1078" x1="5" transform="translate(-2 4.199)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_1079" x1="5" transform="translate(-2 2.1)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_1076" x1="5" transform="translate(-2 10.498)" fill="none" stroke="#d16b77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Mask_Group_2" transform="translate(1)" clip-path="url(#clip-path)">
+      <g id="Ellipse_362" transform="translate(64.387 1617.383)" fill="none" stroke="#d16b77" stroke-width="1">
+        <circle cx="7" cy="7" r="7" stroke="none"/>
+        <circle cx="7" cy="7" r="6.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

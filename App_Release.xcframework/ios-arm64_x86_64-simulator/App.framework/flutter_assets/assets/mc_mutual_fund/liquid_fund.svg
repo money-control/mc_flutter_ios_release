@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_9911" data-name="Group 9911" transform="translate(-290 -830)">
+    <rect id="Rectangle_140498" data-name="Rectangle 140498" width="50" height="50" rx="3" transform="translate(290 830)" fill="none"/>
+    <g id="Group_9910" data-name="Group 9910" transform="translate(0.185 -3.592)">
+      <g id="Group_9908" data-name="Group 9908" transform="translate(0.411)">
+        <rect id="Rectangle_140499" data-name="Rectangle 140499" width="2" height="11" rx="1" transform="translate(326.589 867.377) rotate(90)" fill="#79798e"/>
+        <rect id="Rectangle_140500" data-name="Rectangle 140500" width="2" height="11" rx="1" transform="translate(326.589 870.377) rotate(90)" fill="#79798e"/>
+      </g>
+      <g id="Group_9909" data-name="Group 9909" transform="translate(-1.789)">
+        <rect id="Rectangle_140501" data-name="Rectangle 140501" width="2" height="11" rx="1" transform="translate(315.604 870.377) rotate(90)" fill="#79798e"/>
+        <rect id="Rectangle_140502" data-name="Rectangle 140502" width="2" height="11" rx="1" transform="translate(315.604 867.377) rotate(90)" fill="#79798e"/>
+        <rect id="Rectangle_140503" data-name="Rectangle 140503" width="2" height="11" rx="1" transform="translate(315.604 864.377) rotate(90)" fill="#79798e"/>
+        <rect id="Rectangle_140504" data-name="Rectangle 140504" width="2" height="11" rx="1" transform="translate(315.604 861.377) rotate(90)" fill="#79798e"/>
+        <rect id="Rectangle_140505" data-name="Rectangle 140505" width="2" height="11" rx="1" transform="translate(315.604 858.377) rotate(90)" fill="#79798e"/>
+      </g>
+      <path id="Path_9611" data-name="Path 9611" d="M314.7,834.125s.949,3.353-2.584,7.227-3.126,7.795,0,10.347,7.944.922,9.437-2.667-.879-8-2.434-9.971S314.7,834.125,314.7,834.125Z" transform="translate(5.679 11.467)" fill="#014a9f"/>
+      <g id="ecommerce-rupee" transform="translate(318.695 854.448)">
+        <path id="Path_9612" data-name="Path 9612" d="M3.88,8,.242,4.607V4.365h1.7s2.667.242,2.667-2.182C4.607,0,1.94,0,1.94,0H0" fill="none" stroke="#31d300" stroke-width="1"/>
+        <path id="Path_9613" data-name="Path 9613" d="M0,0H5.82" fill="none" stroke="#31d300" stroke-width="1"/>
+        <path id="Path_9614" data-name="Path 9614" d="M0,0H5.82" transform="translate(0 2.199)" fill="none" stroke="#31d300" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

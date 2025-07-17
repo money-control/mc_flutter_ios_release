@@ -1,0 +1,10 @@
+<svg id="icon-filter" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <circle id="Ellipse_422" data-name="Ellipse 422" cx="16" cy="16" r="16" fill="#3d57bf"/>
+  <g id="Group_30934" data-name="Group 30934" transform="translate(0.38 -0.62)">
+    <rect id="Rectangle_140553" data-name="Rectangle 140553" width="6" height="6" rx="1" transform="translate(12.62 13.62)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_140554" data-name="Rectangle 140554" width="4" height="4" rx="1" transform="translate(13.62 9.62)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_140555" data-name="Rectangle 140555" width="4" height="4" rx="1" transform="translate(13.62 19.62)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_140556" data-name="Rectangle 140556" width="4" height="4" rx="1" transform="translate(22.62 14.62) rotate(90)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_140557" data-name="Rectangle 140557" width="4" height="4" rx="1" transform="translate(12.62 14.62) rotate(90)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

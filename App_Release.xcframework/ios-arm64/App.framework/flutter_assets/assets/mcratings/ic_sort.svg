@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+    <g id="Group_3467" transform="translate(-119 -385)">
+        <g id="Group_3465" transform="translate(99 97)">
+            <g id="Group_3463" transform="translate(27.021 288)">
+                <rect id="Rectangle_1161" width="1" height="7" rx="0.5" transform="translate(1.979)"
+                    fill="#fff" />
+                <path id="Polygon_23" d="M2.5,0,5,3H0Z" transform="translate(4.979 10) rotate(180)"
+                    fill="#fff" />
+            </g>
+            <g id="Group_3510" transform="translate(20 288)">
+                <rect id="Rectangle_1161-2" width="1" height="7" rx="0.5" transform="translate(2 3)"
+                    fill="#fff" />
+                <path id="Polygon_23-2" d="M2.5,0,5,3H0Z" fill="#fff" />
+            </g>
+        </g>
+    </g>
+</svg>

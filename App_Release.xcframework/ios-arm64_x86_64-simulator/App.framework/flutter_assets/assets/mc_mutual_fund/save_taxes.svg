@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_140542" data-name="Rectangle 140542" width="44" height="20" transform="translate(54 704)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_9944" data-name="Group 9944" transform="translate(-50 -674)">
+    <rect id="Rectangle_140541" data-name="Rectangle 140541" width="50" height="50" rx="3" transform="translate(50 674)" fill="none"/>
+    <g id="Group_9943" data-name="Group 9943" transform="translate(-1 -13)">
+      <g id="Mask_Group_27" data-name="Mask Group 27" clip-path="url(#clip-path)">
+        <path id="Icon_awesome-piggy-bank" data-name="Icon awesome-piggy-bank" d="M39.375,15.75H37.3a11.285,11.285,0,0,0-2.63-3.691L36,6.75H33.75a6.707,6.707,0,0,0-5.133,2.412A11.151,11.151,0,0,0,27,9l-10.354.132H16.27A11.171,11.171,0,0,0,6.975,18H3.938a1.689,1.689,0,0,1-1.652-2.025,1.732,1.732,0,0,1,1.723-1.35h.07A.423.423,0,0,0,4.5,14.2V12.8a.423.423,0,0,0-.422-.422A4.028,4.028,0,0,0,.035,15.792a3.94,3.94,0,0,0,3.9,4.458H6.75a11.2,11.2,0,0,0,4.5,8.951v5.674A1.128,1.128,0,0,0,12.375,36h4.5A1.128,1.128,0,0,0,18,34.875V31.5h9v3.375A1.128,1.128,0,0,0,28.125,36h4.5a1.128,1.128,0,0,0,1.125-1.125V29.2c.83-.626,1.568-5.364,2.2-6.2l3.424-2A1.128,1.128,0,0,0,40.5,19.875v-3A1.128,1.128,0,0,0,39.375,15.75Zm-7,2.5A1.125,1.125,0,1,1,33.5,17.125,1.128,1.128,0,0,1,32.375,18.25Z" transform="translate(54.998 699)" fill="none" stroke="#79798e" stroke-width="1"/>
+      </g>
+      <path id="Path_9629" data-name="Path 9629" d="M7,0a7,7,0,0,1,7,7,7.138,7.138,0,0,1-3.287,5.907.974.974,0,0,1-.175.084H3.411a3.015,3.015,0,0,1-.493-.275A6.829,6.829,0,0,1,0,7,7,7,0,0,1,7,0Z" transform="translate(68 698)" fill="#59d059"/>
+      <line id="Line_1616" data-name="Line 1616" x2="11" transform="translate(69.5 712.5)" fill="none" stroke="#79798e" stroke-width="1"/>
+      <g id="ecommerce-rupee" transform="translate(71.976 701.3)">
+        <path id="Path_9630" data-name="Path 9630" d="M24.21,24.616l-3.947-3.231v-.231H22.1S25,21.385,25,19.077C25,17,22.1,17,22.1,17H20" transform="translate(-20 -17)" fill="none" stroke="#014a9f" stroke-width="1"/>
+        <path id="Path_9631" data-name="Path 9631" d="M20,17h6.464" transform="translate(-20.235 -17)" fill="none" stroke="#014a9f" stroke-width="1"/>
+        <path id="Path_9632" data-name="Path 9632" d="M20,23h6.464" transform="translate(-20.235 -20.907)" fill="none" stroke="#014a9f" stroke-width="1"/>
+      </g>
+      <text id="Tax" transform="translate(75 723)" fill="#79798e" font-size="8" font-family="SFCompactDisplay-Semibold, SF Compact Display" font-weight="600" letter-spacing="0.075em"><tspan x="-7" y="0">TAX</tspan></text>
+    </g>
+  </g>
+</svg>

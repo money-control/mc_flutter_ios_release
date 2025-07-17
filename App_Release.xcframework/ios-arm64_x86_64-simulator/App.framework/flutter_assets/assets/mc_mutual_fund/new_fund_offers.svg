@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_9917" data-name="Group 9917" transform="translate(-290 -951)">
+    <rect id="Rectangle_140507" data-name="Rectangle 140507" width="50" height="50" rx="3" transform="translate(290 951)" fill="none"/>
+    <g id="Group_9916" data-name="Group 9916" transform="translate(3)">
+      <g id="Rectangle_140508" data-name="Rectangle 140508" transform="translate(304.44 962)" fill="#23232b" stroke="#79798e" stroke-width="1.2">
+        <rect width="19" height="25" rx="3" stroke="none"/>
+        <rect x="0.6" y="0.6" width="17.8" height="23.8" rx="2.4" fill="none"/>
+      </g>
+      <g id="Rectangle_140509" data-name="Rectangle 140509" transform="translate(301.5 965)" fill="#23232b" stroke="#79798e" stroke-width="1.2">
+        <rect width="19" height="25" rx="3" stroke="none"/>
+        <rect x="0.6" y="0.6" width="17.8" height="23.8" rx="2.4" fill="none"/>
+      </g>
+      <rect id="Rectangle_140510" data-name="Rectangle 140510" width="16" height="12" transform="translate(301 978)" fill="#23232b"/>
+      <g id="Group_9914" data-name="Group 9914" transform="translate(264.023 636.354)">
+        <g id="Group_9913" data-name="Group 9913" transform="translate(38.317 335.568)">
+          <path id="Path_9615" data-name="Path 9615" d="M6.75,1.676c3.517-.074,6.75,4.351,6.75,8.571s-3.022,4.806-6.75,4.806S0,14.466,0,10.246,3.233,1.75,6.75,1.676Z" transform="translate(-0.541 3.612)" fill="#59d059"/>
+          <path id="Path_9616" data-name="Path 9616" d="M3.525,6.311c1.374-.028,2.24-1.22,2.927-2.68.566-1.2,2.066-1.749-.881-1.918a14.41,14.41,0,0,1-2.046.325c-.613,0-1.134-.351-1.848-.327C-1.693,1.82.122,2.436.654,3.631,1.252,4.971,2.151,6.339,3.525,6.311Z" transform="translate(2.857 -1.71)" fill="#59d059"/>
+        </g>
+        <g id="ecommerce-rupee" transform="translate(42.077 344.586)">
+          <path id="Path_9617" data-name="Path 9617" d="M23.558,24.337l-3.335-3.113V21h1.556s2.446.222,2.446-2c0-2-2.446-2-2.446-2H20" transform="translate(-20 -17)" fill="none" stroke="#014a9f" stroke-width="1.2"/>
+          <path id="Path_9618" data-name="Path 9618" d="M20,17h5.336" transform="translate(-20 -17)" fill="none" stroke="#014a9f" stroke-width="1.2"/>
+          <path id="Path_9619" data-name="Path 9619" d="M20,23h5.336" transform="translate(-20 -20.984)" fill="none" stroke="#014a9f" stroke-width="1.2"/>
+        </g>
+      </g>
+      <g id="Group_9915" data-name="Group 9915">
+        <line id="Line_1607" data-name="Line 1607" x2="1" transform="translate(315.5 978.5)" fill="none" stroke="#79798e" stroke-width="1"/>
+        <line id="Line_1608" data-name="Line 1608" x2="3" transform="translate(313.5 975.5)" fill="none" stroke="#79798e" stroke-width="1"/>
+        <line id="Line_1609" data-name="Line 1609" x2="2" transform="translate(314.5 972.5)" fill="none" stroke="#79798e" stroke-width="1"/>
+        <line id="Line_1610" data-name="Line 1610" x2="11" transform="translate(305.5 969.5)" fill="none" stroke="#79798e" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

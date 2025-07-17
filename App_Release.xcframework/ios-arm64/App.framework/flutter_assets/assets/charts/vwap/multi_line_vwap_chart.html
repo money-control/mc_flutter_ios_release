@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title></title>
+    <script src="../scripts/highcharts/highcharts.js"></script>
+    <script src="../scripts/highcharts/accessibility.js"></script>
+    <script src="../scripts/highcharts/boost.js"></script>
+    <script src="../scripts/highcharts/price-indicator.js"></script>
+    <script src="../scripts/highcharts/stock.js"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Disable scrolling */
+            height: 100%;
+            /* Make body take the full height */
+            width: 100%;
+            /* Make body take the full width */
+            touch-action: none;
+            /* Disable touch interactions */
+        }
+
+        .highcharts-container {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #chart-container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        var chart = null;
+        function loadChart(isDarkTheme, options, cmpDataJson, chartDataJsonList, minXValue, minYValue, onlyTodayFilterSelected, onlyCurrentPriceSelected) {
+            chart = Highcharts.chart('chart-container', {
+                chart: {
+                    panning: false,
+                    pinchType: undefined,
+                    zoomType: undefined,
+                    resetZoomButton: false,
+                    scrollablePlotArea: null,
+                    backgroundColor: options.chartBackgroundColor,
+                    events: {
+                        load: function () {
+                            this.update({
+                                navigation: {
+                                    buttonOptions: {
+                                        enabled: false
+                                    }
+                                }
+                            });
+                        },
+                    },
+                },
+                time: {
+                    timezone: "India Standard Time",
+                    useUTC: false,
+                },
+                boost: {
+                    enabled: true,
+                    useGPUTranslations: true
+                },
+                credits: {
+                    enabled: false
+                },
+                title: {
+                    text: ''
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'datetime',
+                    gridLineColor: 'transparent',
+                    crosshair: {
+                        label: {
+                            enabled: false,
+                        },
+                        color: '#9E6111',
+                        dashStyle: 'shortdot',
+                        width: 0.6,
+                    },
+                    tickInterval: onlyTodayFilterSelected || onlyCurrentPriceSelected ? 3600 * 1000 : undefined,
+                    labels: {
+                        style: {
+                            fontSize: '10px',
+                            color: options.xAxisLabelsStyleColor,
+                        },
+                        formatter: onlyTodayFilterSelected || onlyCurrentPriceSelected
+                            ? function () {
+                                return Highcharts.dateFormat('%H:%M', this.value);
+                            }
+                            : undefined,
+                    },
+                    scrollbar: {
+                        enabled: false
+                    },
+                    lineColor: 'transparent',
+                    tickLength: 0
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    },
+                    crosshair: {
+                        label: {
+                            enabled: false,
+                        },
+                        color: '#9E6111',
+                        dashStyle: 'shortdot',
+                        width: 0.6,
+                    },
+                    opposite: true,
+                    gridLineWidth: 0.5,
+                    gridLineColor: options.yAxisGridLineColor,
+                    labels: {
+                        style: {
+                            fontSize: '10px',
+                            color: options.yAxisLabelsStyleColor,
+                        },
+                        formatter: function () {
+                            return Highcharts.numberFormat(this.value, 2, '.', '');
+                        }
+                    },
+                    scrollbar: {
+                        enabled: false
+                    },
+                },
+                legend: {
+                    enabled: false,
+                },
+                tooltip: {
+                    shared: true,
+                    useHTML: true,
+                    outside: true,
+                    formatter: function () {
+                        let tooltip = ``;
+                        if (onlyTodayFilterSelected) {
+                            const date = Highcharts.dateFormat('%b %e, %Y %H:%M', this.x);
+                            tooltip = `<strong style="color:${options.tooltipDateTextColor}">${date}</strong><br>`;
+
+                            tooltip += `<ul style="list-style-type:none; padding:0px; margin:5px 0 0 0;">`;
+                            this.points.forEach(point => {
+                                tooltip += `<li><span style="color:${point.series.color}">\u25CF ${point.series.name}: <b>${Highcharts.numberFormat(point.y, 2, '.', '')}</b> </span></li>`;
+                            });
+                        } else {
+                            const date = onlyCurrentPriceSelected ? Highcharts.dateFormat('%b %e, %Y %H:%M', this.x) : Highcharts.dateFormat('%b %e, %Y', this.x);
+
+                            tooltip = `<strong style="color:${options.tooltipDateTextColor}">${date}</strong><br>`;
+
+                            const currentPriceSeries = this.points.find(point => point.series.name === 'Current Price');
+                            if (currentPriceSeries) {
+                                tooltip += `<strong style="color:${currentPriceSeries.color}">Current Price: ${Highcharts.numberFormat(currentPriceSeries.y, 2, '.', '')}</strong>`;
+                            }
+
+                            tooltip += `<ul style="list-style-type:none; padding:0px; margin:5px 0 0 0;">`;
+                            this.points.forEach(point => {
+                                if (point.series.name !== 'Current Price') {
+                                    tooltip += `<li><span style="color:${point.series.color}">\u25CF ${point.series.name}: <b>${Highcharts.numberFormat(point.y, 2, '.', '')}</b> </span></li>`;
+                                }
+                            });
+                        }
+                        tooltip += `</ul>`;
+                        return tooltip;
+                    },
+                    backgroundColor: options.tooltipBackgroundColor,
+                    borderColor: options.tooltipBorderColor,
+                    style: {
+                        fontSize: '12px',
+                        color: options.tooltipStyleColor,
+                    },
+                    positioner: function (labelWidth, labelHeight, point) {
+                        const chart = this.chart;
+                        let tooltipX = point.plotX + chart.plotLeft;
+                        let tooltipY = point.plotY + chart.plotTop;
+
+                        if (tooltipX + labelWidth > chart.plotWidth + chart.plotLeft) {
+                            tooltipX = chart.plotWidth + chart.plotLeft - labelWidth;
+                        }
+                        if (tooltipX < chart.plotLeft) {
+                            tooltipX = chart.plotLeft;
+                        }
+                        if (tooltipY + labelHeight > chart.plotHeight + chart.plotTop) {
+                            tooltipY = chart.plotHeight + chart.plotTop - labelHeight;
+                        }
+                        if (tooltipY < chart.plotTop) {
+                            tooltipY = chart.plotTop;
+                        }
+
+                        return {
+                            x: tooltipX,
+                            y: tooltipY
+                        };
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        lineWidth: 0.8,
+                        point: {
+                            events: {
+                                select: function () {
+                                    this.update({ marker: { symbol: 'circle' } }, false);
+                                },
+                                unselect: function () {
+                                    this.update({ marker: { enabled: false } }, false);
+                                },
+                            }
+                        },
+                    }
+                },
+            });
+
+            updateChartData(isDarkTheme, options, cmpDataJson, chartDataJsonList, minXValue, minYValue, onlyTodayFilterSelected, false, onlyCurrentPriceSelected);
+        }
+
+        function updateChartData(isDarkTheme, options, cmpDataJson, chartDataJsonList, minXValue, minYValue, onlyTodayFilterSelected, updateTooltip, onlyCurrentPriceSelected) {
+            let seriesObjects = [];
+
+            chartDataJsonList.forEach(element => {
+                var line = null;
+                if (element.key == "Current Price") {
+                    line = {
+                        id: element.key,
+                        name: element.key,
+                        data: element.data,
+                        color: isDarkTheme ? element.lineColorDark : element.lineColorLight,
+                        lastVisiblePrice: {
+                            enabled: true,
+                            label: {
+                                enabled: true,
+                                shape: 'square',
+                                padding: 4,
+                                formatter: function (yValue, v) {
+                                    if (cmpDataJson == null)
+                                        return Highcharts.numberFormat(yValue, 2, '.', '');
+                                    else
+                                        return Highcharts.numberFormat(cmpDataJson.data.y, 2, '.', '');
+                                },
+                                style: {
+                                    color: "white",
+                                    fontWeight: "normal",
+                                    fontSize: "10px",
+                                    textAlign: "center"
+                                },
+                            },
+                        },
+                        lastPrice: {
+                            enabled: false,
+                            x: 10
+                        },
+                        marker: {
+                            enabled: false,
+                            symbol: 'circle',
+                        },
+                        visible: true,
+                    };
+                } else {
+                    line = {
+                        id: element.key,
+                        name: element.key,
+                        data: element.data,
+                        color: isDarkTheme ? element.lineColorDark : element.lineColorLight,
+                        marker: {
+                            enabled: false,
+                            symbol: 'circle',
+                        },
+                        visible: true,
+                    };
+                }
+                seriesObjects.push(line);
+            });
+
+            if (updateTooltip) {
+                chart.update({
+                    tooltip: {
+                        shared: true,
+                        useHTML: true,
+                        outside: true,
+                        formatter: function () {
+                            let tooltip = ``;
+                            if (onlyTodayFilterSelected) {
+                                const date = Highcharts.dateFormat('%b %e, %Y %H:%M', this.x);
+                                tooltip = `<strong style="color:${options.tooltipDateTextColor}">${date}</strong><br>`;
+
+                                tooltip += `<ul style="list-style-type:none; padding:0px; margin:5px 0 0 0;">`;
+                                this.points.forEach(point => {
+                                    tooltip += `<li><span style="color:${point.series.color}">\u25CF ${point.series.name}: <b>${Highcharts.numberFormat(point.y, 2, '.', '')}</b> </span></li>`;
+                                });
+                            } else {
+                                const date = onlyCurrentPriceSelected ? Highcharts.dateFormat('%b %e, %Y %H:%M', this.x) : Highcharts.dateFormat('%b %e, %Y', this.x);
+
+                                tooltip = `<strong style="color:${options.tooltipDateTextColor}">${date}</strong><br>`;
+
+                                const currentPriceSeries = this.points.find(point => point.series.name === 'Current Price');
+                                if (currentPriceSeries) {
+                                    tooltip += `<strong style="color:${currentPriceSeries.color}">Current Price: ${Highcharts.numberFormat(currentPriceSeries.y, 2, '.', '')}</strong>`;
+                                }
+
+                                tooltip += `<ul style="list-style-type:none; padding:0px; margin:5px 0 0 0;">`;
+                                this.points.forEach(point => {
+                                    if (point.series.name !== 'Current Price') {
+                                        tooltip += `<li><span style="color:${point.series.color}">\u25CF ${point.series.name}: <b>${Highcharts.numberFormat(point.y, 2, '.', '')}</b> </span></li>`;
+                                    }
+                                });
+                            }
+                            tooltip += `</ul>`;
+                            return tooltip;
+                        },
+                        backgroundColor: options.tooltipBackgroundColor,
+                        borderColor: options.tooltipBorderColor,
+                        style: {
+                            fontSize: '12px',
+                            color: options.tooltipStyleColor,
+                        },
+                        positioner: function (labelWidth, labelHeight, point) {
+                            const chart = this.chart;
+                            let tooltipX = point.plotX + chart.plotLeft;
+                            let tooltipY = point.plotY + chart.plotTop;
+
+                            // Adjust position if tooltip overflows the chart boundaries
+                            if (tooltipX + labelWidth > chart.plotWidth + chart.plotLeft) {
+                                tooltipX = chart.plotWidth + chart.plotLeft - labelWidth;
+                            }
+                            if (tooltipX < chart.plotLeft) {
+                                tooltipX = chart.plotLeft;
+                            }
+                            if (tooltipY + labelHeight > chart.plotHeight + chart.plotTop) {
+                                tooltipY = chart.plotHeight + chart.plotTop - labelHeight;
+                            }
+                            if (tooltipY < chart.plotTop) {
+                                tooltipY = chart.plotTop;
+                            }
+
+                            return {
+                                x: tooltipX,
+                                y: tooltipY
+                            };
+                        }
+                    },
+                });
+            }
+
+            var hoursToAdd = 6;
+            var minutesToAdd = 15;
+
+            var totalMillisecondsToAdd = (hoursToAdd * 60 * 60 * 1000) + (minutesToAdd * 60 * 1000);
+
+            var maxXValue = minXValue + totalMillisecondsToAdd;
+
+
+            chart.update({
+                xAxis: {
+                    min: minXValue,
+                    max: onlyTodayFilterSelected || onlyCurrentPriceSelected ? maxXValue : undefined,
+                    tickInterval: onlyTodayFilterSelected || onlyCurrentPriceSelected ? 3600 * 1000 : undefined,
+                    labels: {
+                        formatter: onlyTodayFilterSelected || onlyCurrentPriceSelected
+                            ? function () {
+                                return Highcharts.dateFormat('%H:%M', this.value);
+                            }
+                            : undefined,
+                    }
+                },
+                yAxis: {
+                    min: minYValue
+                },
+            });
+
+            seriesObjects.forEach(element => {
+                setOrReplaceSeriesData(element);
+            });
+        }
+
+        function hideTooltip(options, onlyTodayFilterSelected, onlyCurrentPriceSelected) {
+            chart.update({
+                tooltip: {
+                    shared: true,
+                    useHTML: true,
+                    outside: true,
+                    formatter: function () {
+                        let tooltip = ``;
+                        if (onlyTodayFilterSelected) {
+                            const date = Highcharts.dateFormat('%b %e, %Y %H:%M', this.x);
+                            tooltip = `<strong style="color:${options.tooltipDateTextColor}">${date}</strong><br>`;
+
+                            tooltip += `<ul style="list-style-type:none; padding:0px; margin:5px 0 0 0;">`;
+                            this.points.forEach(point => {
+                                tooltip += `<li><span style="color:${point.series.color}">\u25CF ${point.series.name}: <b>${Highcharts.numberFormat(point.y, 2, '.', '')}</b> </span></li>`;
+                            });
+                        } else {
+                            const date = onlyCurrentPriceSelected ? Highcharts.dateFormat('%b %e, %Y %H:%M', this.x) : Highcharts.dateFormat('%b %e, %Y', this.x);
+
+                            tooltip = `<strong style="color:${options.tooltipDateTextColor}">${date}</strong><br>`;
+
+                            const currentPriceSeries = this.points.find(point => point.series.name === 'Current Price');
+                            if (currentPriceSeries) {
+                                tooltip += `<strong style="color:${currentPriceSeries.color}">Current Price: ${Highcharts.numberFormat(currentPriceSeries.y, 2, '.', '')}</strong>`;
+                            }
+
+                            tooltip += `<ul style="list-style-type:none; padding:0px; margin:5px 0 0 0;">`;
+                            this.points.forEach(point => {
+                                if (point.series.name !== 'Current Price') {
+                                    tooltip += `<li><span style="color:${point.series.color}">\u25CF ${point.series.name}: <b>${Highcharts.numberFormat(point.y, 2, '.', '')}</b> </span></li>`;
+                                }
+                            });
+                        }
+                        tooltip += `</ul>`;
+                        return tooltip;
+                    },
+                    backgroundColor: options.tooltipBackgroundColor,
+                    borderColor: options.tooltipBorderColor,
+                    style: {
+                        fontSize: '12px',
+                        color: options.tooltipStyleColor,
+                    },
+                    positioner: function (labelWidth, labelHeight, point) {
+                        const chart = this.chart;
+                        let tooltipX = point.plotX + chart.plotLeft;
+                        let tooltipY = point.plotY + chart.plotTop;
+
+                        // Adjust position if tooltip overflows the chart boundaries
+                        if (tooltipX + labelWidth > chart.plotWidth + chart.plotLeft) {
+                            tooltipX = chart.plotWidth + chart.plotLeft - labelWidth;
+                        }
+                        if (tooltipX < chart.plotLeft) {
+                            tooltipX = chart.plotLeft;
+                        }
+                        if (tooltipY + labelHeight > chart.plotHeight + chart.plotTop) {
+                            tooltipY = chart.plotHeight + chart.plotTop - labelHeight;
+                        }
+                        if (tooltipY < chart.plotTop) {
+                            tooltipY = chart.plotTop;
+                        }
+
+                        return {
+                            x: tooltipX,
+                            y: tooltipY
+                        };
+                    }
+                },
+            });
+        }
+
+        function setOrReplaceSeriesData(series) {
+            var existingSeries = chart.get(series.id) || chart.get(series.name);
+            if (existingSeries) {
+                existingSeries.setData(series.data);
+            } else {
+                chart.addSeries(series);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="chart-container"></div>
+</body>
+
+</html>

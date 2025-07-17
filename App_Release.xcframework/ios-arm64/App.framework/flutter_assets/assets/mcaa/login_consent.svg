@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_8738" data-name="Group 8738" transform="translate(-18 -162)">
+    <circle id="Ellipse_422" data-name="Ellipse 422" cx="20" cy="20" r="20" transform="translate(18 162)" fill="#3d57bf"/>
+    <g id="Group_8737" data-name="Group 8737" transform="translate(8.055 7.624)">
+      <g id="Group_8736" data-name="Group 8736" transform="translate(22 164.58)">
+        <line id="Line_1328" data-name="Line 1328" x2="2.806" transform="translate(2.849 3.52)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+        <path id="Path_6438" data-name="Path 6438" d="M0,0H5.08" transform="translate(2.849 7.324)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+        <line id="Line_1332" data-name="Line 1332" x2="3.929" transform="translate(2.849 14.934)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+        <line id="Line_1330" data-name="Line 1330" x2="3.92" transform="translate(2.849 11.131)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+        <g id="Group_8735" data-name="Group 8735">
+          <g id="Icon_ionic-ios-document" data-name="Icon ionic-ios-document" transform="translate(0 0.005)">
+            <path id="Path_6436" data-name="Path 6436" d="M15.392,6.5V3.938h-6.6A1.48,1.48,0,0,0,7.313,5.413v15.5a1.48,1.48,0,0,0,1.476,1.476h11.07a1.48,1.48,0,0,0,1.476-1.476V8.58H17.467A2.079,2.079,0,0,1,15.392,6.5Z" transform="translate(-7.313 -3.938)" fill="none" stroke="#fff" stroke-width="1"/>
+          </g>
+          <path id="Path_6437" data-name="Path 6437" d="M-14454.822-18112.5a4.782,4.782,0,0,1,.953.041,1.15,1.15,0,0,1,.558.252l4.261,3.014a.976.976,0,0,1,.339.676,4.609,4.609,0,0,1,0,.836" transform="translate(14462.717 18112.51)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_504" data-name="Ellipse 504" cx="5.5" cy="6.5" rx="5.5" ry="6.5" transform="translate(28.945 171.377)" fill="#3d57bf"/>
+      <g id="Group_8733" data-name="Group 8733" transform="translate(31.454 173.806)">
+        <g id="shield" transform="translate(-0.252 -0.314)">
+          <path id="Path_6433" data-name="Path 6433" d="M8.089,12.224s4.089-2.045,4.089-5.112V3.534L8.089,2,4,3.534V7.112C4,10.179,8.089,12.224,8.089,12.224Z" transform="translate(-4 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <path id="Path_6434" data-name="Path 6434" d="M288.872,130.439l1.275,1.155,2.154-2.387" transform="translate(-286.45 -125.811)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

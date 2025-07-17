@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_6454" data-name="Group 6454" transform="translate(-38 -542.5)">
+    <rect id="Rectangle_1240" data-name="Rectangle 1240" width="24" height="24" rx="3" transform="translate(38 542.5)" fill="#30303a" opacity="0"/>
+    <g id="email-84" transform="translate(31.5 549)">
+      <g id="Group_6452" data-name="Group 6452" transform="translate(0.5 1.5)">
+        <path id="Subtraction_8" data-name="Subtraction 8" d="M-472-314.5h-7a1,1,0,0,1-1-1v-3h9v3A1,1,0,0,1-472-314.5Zm-3.5-3a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0-475.5-317.5Z" transform="translate(493.5 326)" fill="#fff"/>
+        <g id="Rectangle_1280" data-name="Rectangle 1280" transform="translate(13 -4)" fill="none" stroke="#fff" stroke-width="1">
+          <rect width="10" height="16" rx="2" stroke="none"/>
+          <rect x="0.5" y="0.5" width="9" height="15" rx="1.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
