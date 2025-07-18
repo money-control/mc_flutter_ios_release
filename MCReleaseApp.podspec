@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "MCReleaseApp"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = "Remote Release Appframework SDK for Flutter"
   s.homepage     = "https://github.com/money-control/mc_flutter_ios_release"
-  s.license      = "MIT"
   s.author       = { "You" => "suryanarayan.sahu@nw18.com" }
   s.platform     = :ios, "15.0"
 
